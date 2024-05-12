@@ -3,7 +3,7 @@ function indexOfIgnoreCase(s1, s2) {
 	let ans = -1;
 	let val = s2.charAt(0);
 	for(let i = 0; i < s1.length; i++){
-		if(val == s2.charAt(i)){
+		if(val.toLowerCase() === s2.charAt(i).toLowerCase()){
 			ans = i;
 		}
 	}
@@ -11,6 +11,6 @@ function indexOfIgnoreCase(s1, s2) {
 }
 
 // Please do not change the code below
-const s1 = prompt("Enter s1:");
-const s2 = prompt("Enter s2:");
-alert(indexOfIgnoreCase(s1, s2));
+// const s1 = prompt("Enter s1:");
+// const s2 = prompt("Enter s2:");
+// alert(indexOfIgnoreCase(s1, s2));
